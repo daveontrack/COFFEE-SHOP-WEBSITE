@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+      integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <title>Coffee Website</title>
+  </head>
+  <body>
+    <header id="navbar" class="text-black lg:text-white">
+      <nav class="max-w-[1920px]">
+        <div
+          id="sticky-menu"
+          class="fixed w-full top-0 left-0 z-50 lg:top-[-100%] duration-500"
+        >
+          <div
+            class="flex items-center justify-between h-24 px-5 md:px-20 lg:max-w-4xl lg:mx-auto"
+          >
+            <div class="flex-1 text-white lg:hidden"></div>
+            <div class="flex-1 grid place-items-center lg:place-items-start">
+              <img
+                src="assets/images/logo.png"
+                alt="Brewy Coffee Logo"
+                class="w-20"
+              />
+            </div>
+            <div
+              id="nav-menu"
+              class="absolute top-0 right-[-100%] min-h-[70vh] w-full px-5 bg-white flex flex-col gap-5 duration-500 ease-out overflow-hidden md:px-10 lg:static lg:min-h-fit lg:bg-transparent lg:w-auto lg:hidden"
+            >
+              <div class="flex items-center justify-between h-24 lg:hidden">
+                <img
+                  src="assets/images/logo_2.png"
+                  alt="Brewy Logo"
+                  class="w-20"
+                />
+                <div id="closeicon" class="text-3xl cursor-pointer">
+                  <i class="ri-close-large-line"></i>
+                </div>
+              </div>
+              <ul class="flex flex-col items-start gap-5 lg:flex-row">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#fragrance" class="nav-link">Fragrance</a></li>
+                <li><a href="#quality" class="nav-link">Quality</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+              </ul>
+              <div class="flex items-center py-10 lg:hidden">
+                <p class="font-bold">
+                  follow us <span class="ml-3 mr-5">-</span>
+                </p>
+                <ul class="nav__icons__mobile flex space-x-4">
+                  <li
+                    class="border-2 border-black h-8 w-8 rounded-full grid place-items-center"
+                  >
+                    <a href="#" aria-label="Twitter"
+                      ><i class="ri-twitter-x-line text-xl"></i
+                    ></a>
+                  </li>
+                  <li
+                    class="border-2 border-black h-8 w-8 rounded-full grid place-items-center"
+                  >
+                    <a href="#" aria-label="Facebook"
+                      ><i class="ri-facebook-fill"></i
+                    ></a>
+                  </li>
+                  <li
+                    class="border-2 border-black h-8 w-8 rounded-full grid place-items-center"
+                  >
+                    <a href="#" aria-label="Instagram"
+                      ><i class="ri-instagram-line"></i
+                    ></a>
+                  </li>
+                  <li
+                    class="border-2 border-black h-8 w-8 rounded-full grid place-items-center"
+                  >
+                    <a href="#" aria-label="YouTube"
+                      ><i class="ri-youtube-fill"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="absolute bottom-16 -right-5 opacity-20 pointer-events-none lg:hidden"
+              >
+                <img
+                  src="assets/images/coffee_leaf.png"
+                  alt="Coffee leaf decoration"
+                  class="w-60"
+                />
+              </div>
+            </div>
+            <div
+              class="flex-1 text-white text-3xl cursor-pointer text-right lg:hidden"
+            >
+              <i class="ri-menu-4-line" id="hamburger"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:block py-4">
+          <div class="container flex items-center justify-center">
+            <div class="flex-1 flex items-center">
+              <p class="font-bold">
+                <!-- follow us -->
+                <span class="ml-3 mr-5"></span>
+              </p>
+              <ul class="nav__icons flex space-x-4">
+                <li
+                  class="border-2 border-green-900 h-8 w-8 rounded-full grid place-items-center"
+                >
+                  <a
+                    href="#"
+                    class="text-green-700 hover:text-white"
+                    aria-label="Twitter"
+                    ><i class="ri-twitter-x-line text-xl"></i
+                  ></a>
+                </li>
+                <li
+                  class="border-2 border-green-900 h-8 w-8 rounded-full grid place-items-center"
+                >
+                  <a
+                    href="#"
+                    class="text-green-700 hover:text-white"
+                    aria-label="Facebook"
+                    ><i class="ri-facebook-fill"></i
+                  ></a>
+                </li>
+                <li
+                  class="border-2 border-green-900 h-8 w-8 rounded-full grid place-items-center"
+                >
+                  <a
+                    href="#"
+                    class="text-green-700 hover:text-white"
+                    aria-label="Instagram"
+                    ><i class="ri-instagram-line"></i
+                  ></a>
+                </li>
+                <li
+                  class="border-2 border-green-900 h-8 w-8 rounded-full grid place-items-center"
+                >
+                  <a
+                    href="#"
+                    class="text-green-700 hover:text-white"
+                    aria-label="YouTube"
+                    ><i class="ri-youtube-fill"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-1">
+              <img
+                src="assets/images/logo.png"
+                alt="Brewy Coffee Logo"
+                class="w-20 mx-auto"
+              />
+            </div>
+            <div class="flex-1 flex items-center justify-end">
+              <ul class="nav__icons flex space-x-6">
+                <li
+                  class="border-2 border-green-900 h-8 w-8 rounded-full grid place-items-center hover:bg-green-700 hover:border-white transition-colors"
+                >
+                  <a
+                    href="#"
+                    class="text-green-700 hover:text-white"
+                    aria-label="User Account"
+                    ><i class="ri-user-fill"></i
+                  ></a>
+                </li>
+                <li
+                  class="border-2 border-green-900 h-8 w-8 rounded-full grid place-items-center hover:bg-green-700 hover:border-white transition-colors"
+                >
+                  <a
+                    href="#"
+                    class="text-green-700 hover:text-white"
+                    aria-label="Shopping Cart"
+                    ><i class="ri-shopping-bag-fill"></i
+                  ></a>
+                </li>
+                <li
+                  class="border-2 border-green-900 h-8 w-8 rounded-full grid place-items-center hover:bg-green-700 hover:border-white transition-colors relative"
+                >
+                  <a
+                    href="#"
+                    class="text-green-700 hover:text-white"
+                    aria-label="Search"
+                  >
+                    <i class="ri-search-line"></i>
+                    <span
+                      class="absolute -top-2 -right-2 bg-white text-green-900 text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center"
+                      >0</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex items-center justify-center mt-10">
+            <div class="flex justify-center gap-8">
+              <a href="#home" class="nav-link active">Home</a>
+              <a href="#about" class="nav-link">About</a>
+              <a href="#fragrance" class="nav-link">Fragrance</a>
+              <a href="#quality" class="nav-link">Quality</a>
+              <a href="#products" class="nav-link">Products</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="home" class="lg:-mt-44">
+        <div class="bg-[url('assets/images/hero_bg.jpg')] bg-cover">
+          <div
+            class="container pt-40 pb-[40%] flex flex-col justify-center items-center gap-3 text-center md:pb-[30%] lg:pt-72 lg:gap-5 lg:max-w-3xl lg:pb-[35%] xl:max-w-5xl xl:pb-[20%]"
+          >
+            <h1 class="text-green-900 font-bold xl:text-6xl">
+              <!-- class="text-green-900 font-bold text-5xl md:text-7xl lg:text-[80px] xl:text-[100px]" -->
+              Organic
+            </h1>
+            <h1 class="text-white font-bold xl:text-7xl">Colombian Coffee</h1>
+            <p class="text-white mt-5">
+              Experience the rich essence of Colombia with a coffee<br />
+              crafted to perfection. Smooth and bold, each sip delivers a <br />
+              unique blend of flavor and aroma that awakens your senses.
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative bg-green-800 bg-[url('assets/images/coffee-pattern.png')] bg-repeat bg-[length:400px_400px]"
+        >
+          <div
+            class="relative w-full h-0 pb-[50%] md:pb-[45%] lg:pb-[35%] xl:pb-0 xl:h-[450px]"
+          >
+            <img
+              src="assets/images/coffee-bean.png"
+              alt="coffee-bean"
+              class="absolute -top-1/2 left-1/2 transform -translate-x-1/2 w-[90%] sm:w-[80%] xl:w-[750px]"
+            />
+          </div>
+        </div>
+      </div>
+
+      <section id="about" class="container flex flex-col gap-20 lg:flex-row">
+        <div class="lg:w-1/2">
+          <div class="flex flex-col md:gap-2 text-center lg:text-start">
+            <h2 class="text-green-700 font-bold xl:text-5xl">
+              Caturra & Maragogipe
+            </h2>
+            <h2 class="font-bold text-black xl:text-3xl">
+              Boutique Plantation Coffee
+            </h2>
+            <p class="mt-5">
+              The smooth richness of Organic Colombian Coffee is perfectly
+              balanced, offering a deep, bold flavor with a hint<br />
+              of sweetness. Enjoy the harmonious blend that awakens your senses
+              with every sip.
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-2 py-10 lg:items-start">
+            <div class="flex items-center gap-5 font-bold">
+              <i class="ri-file-list-2-fill text-2xl text-green-700"></i>
+              <p class="text-green-700">Download price</p>
+            </div>
+            <div class="flex items-center gap-5 font-bold">
+              <i class="ri-phone-fill text-2xl text-green-700"></i>
+              <p class="text-black">+14678-039-23-11</p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center gap-5 md:flex-row xl:justify-start"
+          >
+            <button class="btn-primary">
+              <span class="relative z-10">Read More</span>
+            </button>
+            <button class="btn-secondary">
+              <span class="relative z-10">Read More</span>
+            </button>
+          </div>
+        </div>
+        <div class="relative lg:w-1/2">
+          <img
+            src="assets/images/about_image.png"
+            alt="about_image"
+            class="w-full mx-auto md:w-[80%] lg:w-full xl:w-[80%]"
+          />
+          <div
+            class="absolute top-0 left-0 bg-white shadow-2xl h-40 w-40 rounded-full grid place-items-center text-center border-2 border-green-900 md:left-[20%] lg:h-44 lg:w-44"
+          >
+            <h3 class="text-black font-bold xl:text-2xl">Since</h3>
+            <h2 class="text-green-900 font-bold xl:text-3xl">1995</h2>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="relative bg-[url('assets/images/bg_image.jpg')] bg-top bg-no-repeat"
+      >
+        <div class="container relative z-10">
+          <h3 class="max-w-5xl text-center mx-auto">
+            Experience the vibrant taste of Organic Colombian Coffee, <br />
+            crafted to perfection with a
+            <span class="text-green-700"> smooth finish and rich aroma</span>.
+            Its balanced<br />
+            notes offer a satisfying blend of flavor and freshness, making every
+            cup truly exceptional.
+          </h3>
+          <!-- -------1--- -->
+          <div
+            class="mt-20 grid grid-cols-1 gap-14 md:gris-cols-2 xl:grid-cols-4"
+          >
+            <div
+              class="about__item flex flex-col gap-3 items-center justify-center text-center"
+            >
+              <div class="about__item__img relative h-60 w-60">
+                <img
+                  src="assets/images/coffee-1.jpg"
+                  alt="variety-images"
+                  class="rounded-full"
+                />
+                <h3
+                  class="absolute -left-8 top-1/3 h-16 w-16 bg-green-800 grid place-items-center rounded-full text-white md:h-20 md:w-20 md:-left-10"
+                >
+                  01
+                </h3>
+              </div>
+              <h3>Arabica Green</h3>
+              <p>
+                Enjoy the smooth, full-bodied flavor of Organic Colombian
+                Coffee, perfectly balanced for a rich and satisfying experience.
+              </p>
+            </div>
+            <!-- -----2----- -->
+            <div
+              class="about__item flex flex-col gap-3 items-center justify-center text-center"
+            >
+              <div class="about__item__img relative h-60 w-60">
+                <img
+                  src="assets/images/coffee-2.jpg"
+                  alt="variety-images"
+                  class="rounded-full"
+                />
+                <h3
+                  class="absolute -left-8 top-1/3 h-16 w-16 bg-green-800 grid place-items-center rounded-full text-white md:h-20 md:w-20 md:-left-10"
+                >
+                  02
+                </h3>
+              </div>
+              <h3>Arabica Roasted</h3>
+              <p>
+                Enjoy the smooth, full-bodied flavor of Organic Colombian
+                Coffee, perfectly balanced for a rich and satisfying experience.
+              </p>
+            </div>
+            <!-- ----3----- -->
+            <div
+              class="about__item flex flex-col gap-3 items-center justify-center text-center"
+            >
+              <div class="about__item__img relative h-60 w-60">
+                <img
+                  src="assets/images/coffee-3.jpg"
+                  alt="variety-images"
+                  class="rounded-full"
+                />
+                <h3
+                  class="absolute -left-8 top-1/3 h-16 w-16 bg-green-800 grid place-items-center rounded-full text-white md:h-20 md:w-20 md:-left-10"
+                >
+                  03
+                </h3>
+              </div>
+              <h3>Robusta Roasted</h3>
+              <p>
+                Enjoy the smooth, full-bodied flavor of Organic Colombian
+                Coffee, perfectly balanced for a rich and satisfying experience.
+              </p>
+            </div>
+            <!-- ------4----- -->
+            <div
+              class="about__item flex flex-col gap-3 items-center justify-center text-center"
+            >
+              <div class="about__item__img relative h-60 w-60">
+                <img
+                  src="assets/images/coffee-4.jpg"
+                  alt="variety-images"
+                  class="rounded-full"
+                />
+                <h3
+                  class="absolute -left-8 top-1/3 h-16 w-16 bg-green-800 grid place-items-center rounded-full text-white md:h-20 md:w-20 md:-left-10"
+                >
+                  04
+                </h3>
+              </div>
+              <h3>Mixed Sorts</h3>
+              <p>
+                Enjoy the smooth, full-bodied flavor of Organic Colombian
+                Coffee, perfectly balanced for a rich and satisfying experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fragrance" class="py-0 flex">
+        <img
+          src="assets/images/fragrance_01.jpg"
+          alt="fragrance_images"
+          class="hidden lg:block w-1/3 object-cover"
+        />
+        <div
+          class="relative bg-green-800 w-full flex items-center py-20 overflow-hidden md:py-32"
+        >
+          <img
+            src="assets/images/fragrance_bg.png"
+            alt="fragrance_images"
+            class="absolute bottom-0 -right-20 h-full pointer-events-none opacity-20 xl:-right-24"
+          />
+          <div
+            class="flex flex-col items-center max-w-sm mx-auto px-3 md:text-start md:items-start md:mx-12 md:max-w-md"
+          >
+            <!-- xl:text-6xl -->
+            <h2 class="text-black xl:text-5xl">Unmatched</h2>
+            <h2 class="text-white xl:text-6xl leading-tight">
+              Fragrance in Each Sip
+            </h2>
+            <p class="text-white pt-10 pb-20">
+              Savor the bold richness of Organic Colombian Coffee, expertly
+              crafted for a smooth and balanced flavor. Each cup offers a deep,
+              satisfying experience with a perfect hint of refinement.
+            </p>
+            <button class="btn-secondary">
+              <span class="z-10">Read More</span>
+            </button>
+          </div>
+        </div>
+        <img
+          src="assets/images/Fragrance_02.jpg"
+          alt="fragrance_images"
+          class="hidden lg:block w-1/3 object-cover"
+        />
+      </section>
+
+      <section id="quality">
+        <div class="flex flex-col lg:flex-row xl:items-center">
+          <!-- left-side -->
+          <div class="flex flex-col gap-12 xl:w-1/4 xl:gap-20">
+            <!-- ----1------ -->
+            <div class="flex items-start gap-5">
+              <img
+                src="assets/images/quality_01.png"
+                alt="quality_image"
+                class="w-20"
+              />
+              <div>
+                <h4 class="font-bold text-black">Pure Grades</h4>
+                <p>
+                  Enjoy the rich, bold flavor of Organic Colombian Coffee,<br />
+                  meticulously crafted for a smooth and satisfying experience.
+                </p>
+              </div>
+            </div>
+            <!-- ------2----- -->
+            <div class="flex items-start gap-5">
+              <img
+                src="assets/images/quality_02.png"
+                alt="quality_image"
+                class="w-20"
+              />
+              <div>
+                <h4 class="font-bold text-black">Wide Assortment</h4>
+                <p>
+                  Enjoy the rich, bold flavor of Organic Colombian Coffee,<br />
+                  meticulously crafted for a smooth and satisfying experience.
+                </p>
+              </div>
+            </div>
+            <!-- ----3------ -->
+            <div class="flex items-start gap-5">
+              <img
+                src="assets/images/quality_03.png"
+                alt="quality_image"
+                class="w-20"
+              />
+              <div>
+                <h4 class="font-bold text-black">Proper Roasting</h4>
+                <p>
+                  Enjoy the rich, bold flavor of Organic Colombian Coffee,<br />
+                  meticulously crafted for a smooth and satisfying experience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hidden xl:w-1/2 xl:grid xl:place-items-center">
+            <img
+              src="assets/images/cup.png"
+              alt="quality-cup"
+              class="w-[70%]"
+            />
+          </div>
+          <!-- right-side -->
+          <div class="flex flex-col gap-12 pt-12 lg:pt-0 xl:w-1/4 xl:gap-20">
+            <!-- ----1------ -->
+            <div class="flex items-start gap-5 lg:flex-row-reverse">
+              <img
+                src="assets/images/quality_04.png"
+                alt="quality_image"
+                class="w-20"
+              />
+              <div class="lg:text-end">
+                <h4 class="font-bold text-black">High Quality</h4>
+                <p>
+                  Enjoy the rich, bold flavor of Organic Colombian Coffee,<br />
+                  meticulously crafted for a smooth and satisfying experience.
+                </p>
+              </div>
+            </div>
+            <!-- ------2----- -->
+            <div class="flex items-start gap-5 lg:flex-row-reverse">
+              <img
+                src="assets/images/quality_05.png"
+                alt="quality_image"
+                class="w-20"
+              />
+              <div class="lg:text-end">
+                <h4 class="font-bold text-black">Excellent Grinding</h4>
+                <p>
+                  Enjoy the rich, bold flavor of Organic Colombian Coffee,<br />
+                  meticulously crafted for a smooth and satisfying experience.
+                </p>
+              </div>
+            </div>
+            <!-- ----3------ -->
+            <div class="flex items-start gap-5 lg:flex-row-reverse">
+              <img
+                src="assets/images/quality_06.png"
+                alt="quality_image"
+                class="w-20"
+              />
+              <div class="lg:text-end">
+                <h4 class="font-bold text-black">Awesome Aroma</h4>
+                <p>
+                  Enjoy the rich, bold flavor of Organic Colombian Coffee,<br />
+                  meticulously crafted for a smooth and satisfying experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="container lg:pt-0">
+        <div class="flex flex-col items-center text-center max-w-2xl mx-auto">
+          <h4
+            class="lg:pt-0 text-1xl text-green-700 text-base font-bold sm:text-lg"
+          >
+            Online Store
+          </h4>
+          <h2 class="text-3xl font-bold md:text-5xl">Popular Products</h2>
+          <p class="py-5">
+            Enjoy the rich, bold flavor of Organic Colombian Coffee,<br />meticulously
+            crafted for a smooth and satisfying experience. <br />Aliquam eget
+            sapien sed orci accumsan interdum at ac mi.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center gap-5 lg:flex-row lg:justify-start lg:items-start lg:gap-20 lg:mt-10"
+        >
+          <div class="grid place-items-end lg:w-1/2">
+            <img
+              src="assets/images/product_01.png"
+              alt="products_image"
+              class="w-full xl:w-[80%]"
+            />
+          </div>
+          <div
+            class="flex flex-col items-center justify-center gap-10 text-center lg:w-1/2 lg:text-start lg:items-start"
+          >
+            <div class="space-y-3 lg:pt-10">
+              <div class="text-yellow-500">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <h3 class="text-black text-2xl font-bold">Ethiopia Arabica</h3>
+              <p class="font-bold">
+                Discover the origins of our Organic Colombian Coffee,<br />
+                crafted with care and dedication to perfection.<br />
+                Each sip reveals the true essence of quality, bringing<br />
+                you an exceptional coffee experience.
+              </p>
+            </div>
+            <div class="pl-16">
+              <div class="flex items-center gap-5">
+                <i class="ri-check-line text-green-700 font-bold text-xl"></i>
+                <p>Pure Grade</p>
+              </div>
+              <div class="flex items-center gap-5">
+                <i class="ri-check-line text-green-700 font-bold text-xl"></i>
+                <p>Amazing Vanilla Aroma</p>
+              </div>
+              <div class="flex items-center gap-5">
+                <i class="ri-check-line text-green-700 font-bold text-xl"></i>
+                <p>Strong Roasting</p>
+              </div>
+              <div class="flex items-center gap-5">
+                <i class="ri-check-line text-green-700 font-bold text-xl"></i>
+                <p>Ultra Grinding</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-5">
+              <p class="text-2xl line-through font-bold">$19.99</p>
+              <p class="text-2xl font-bold text-red-500">$16.99</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-5">
+              <button class="btn-primary">
+                <span class="relative z-10">Add to cart</span>
+              </button>
+              <button class="btn-secondary">
+                <span class="relative z-10">More Info</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container py-20 md:py-28">
+          <div class="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-4">
+            <!-- product 1 -->
+            <div class="flex flex-col items-center justify-center gap-3">
+              <img
+                src="assets/images/product_02.png"
+                alt="product-image"
+                class="w-1/2 hover:scale-110 hover:-rotate-6 duration-300 cursor-pointer lg:w-[70%]"
+              />
+              <div class="text-yellow-500">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <div class="text-center">
+                <h4 class="text-base font-bold sm:text-lg">Peru Whole Bean</h4>
+                <h4 class="text-geern-700 font-bold sm:text-lg">$42.49</h4>
+              </div>
+              <button class="btn-primary">
+                <span class="relative z-10">Add to cart</span>
+              </button>
+            </div>
+            <!-- product 2-->
+            <div class="flex flex-col items-center justify-center gap-3">
+              <img
+                src="assets/images/product_03.png"
+                alt="product-image"
+                class="w-1/2 hover:scale-110 hover:-rotate-6 duration-300 cursor-pointer lg:w-[70%]"
+              />
+              <div class="text-yellow-500">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <div class="text-center">
+                <h4 class="text-base font-bold sm:text-lg">
+                  Ethiopia Whole Bean
+                </h4>
+                <h4 class="text-geern-700 font-bold sm:text-lg">$58.49</h4>
+              </div>
+              <button class="btn-primary">
+                <span class="relative z-10">Add to cart</span>
+              </button>
+            </div>
+            <!-- product 3-->
+            <div class="flex flex-col items-center justify-center gap-3">
+              <img
+                src="assets/images/product_04.png"
+                alt="product-image"
+                class="w-1/2 hover:scale-110 hover:-rotate-6 duration-300 cursor-pointer lg:w-[70%]"
+              />
+              <div class="text-yellow-500">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <div class="text-center">
+                <h4 class="text-base font-bold sm:text-lg">
+                  Columbia Whole Bean
+                </h4>
+                <h4 class="text-geern-700 font-bold sm:text-lg">$45.49</h4>
+              </div>
+              <button class="btn-primary">
+                <span class="relative z-10">Add to cart</span>
+              </button>
+            </div>
+            <!-- product 4 -->
+            <div class="flex flex-col items-center justify-center gap-3">
+              <img
+                src="assets/images/product_05.png"
+                alt="product-image"
+                class="w-1/2 hover:scale-110 hover:-rotate-6 duration-300 cursor-pointer lg:w-[70%]"
+              />
+              <div class="text-yellow-500">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <div class="text-center">
+                <h4 class="text-base font-bold sm:text-lg">
+                  Nicaragua Whole Bean
+                </h4>
+                <h4 class="text-geern-700 font-bold sm:text-lg">$38.49</h4>
+              </div>
+              <button class="btn-primary">
+                <span class="relative z-10">Add to cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[url('assets/images/footer_bg.jpg')] bg-cover">
+      <div
+        class="container py-20 flex flex-col gap-20 max-w-sm md:py-28 lg:flex-row lg:max-w-full"
+      >
+        <div class="flex-1 flex flex-col items-center gap-8 text-center">
+          <img
+            src="assets/images/logo.png"
+            alt="logo"
+            class="w-24 mx-auto md:w-28"
+          />
+
+          <p class="text-white opacity-50 lg:max-w-x5 lg:text-start">
+            Experience the smooth and balanced taste of Organic Colombian
+            Coffee,<br />
+            with a perfect blend of rich flavor and refined notes in every cup.
+          </p>
+
+          <ul class="flex space-x-4">
+            <li class="text-xl md:text-2xl">
+              <a
+                href="#"
+                class="text-green-700 hover:text-white duration-300"
+                aria-label="Twitter"
+                ><i class="ri-twitter-x-line"></i
+              ></a>
+            </li>
+            <li class="text-xl md:text-2xl">
+              <a
+                href="#"
+                class="text-green-700 hover:text-white duration-300"
+                aria-label="Facebook"
+                ><i class="ri-facebook-fill"></i
+              ></a>
+            </li>
+            <li class="text-xl md:text-2xl">
+              <a
+                href="#"
+                class="text-green-700 hover:text-white duration-300"
+                aria-label="Instagram"
+                ><i class="ri-instagram-line"></i
+              ></a>
+            </li>
+            <li class="text-xl md:text-2xl">
+              <a
+                href="#"
+                class="text-green-700 hover:text-white duration-300"
+                aria-label="YouTube"
+                ><i class="ri-youtube-fill"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="flex-1 text-green-800 flex flex-col gap-8 lg:pl-[3%] xl:pl[6%]"
+        >
+          <div
+            class="lg: self-start text-2xl font-bold border-b-2 border-green-800 self-center"
+          >
+            Contact Info
+          </div>
+          <div class="flex text-start gap-3">
+            <i class="ri-map-pin-fill text-2xl"></i>
+            <div>
+              <p class="font-bold">Our location</p>
+              <p class="text-white">Rio de Janeiro, RJ Brazil, 04103 Route</p>
+            </div>
+          </div>
+
+          <div class="flex text-start gap-3">
+            <i class="ri-phone-fill text-2xl"></i>
+            <div>
+              <p class="font-bold">Phones:</p>
+              <p class="text-white">+14678-039-23-11</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 text-green-700 flex flex-col gap-8">
+          <div
+            class="text-2xl font-bold border-b-2 border-green-800 self-center lg: self-start"
+          >
+            Subscribe
+          </div>
+
+          <div class="flex text-start gap-5">
+            <input
+              type="email"
+              placeholder="please enter your email"
+              class="p-5 rounded-l-full outline-none"
+            />
+            <button
+              class="inline-block border border-green-900 text-white bg-green-800 px-14 py-4 rounded-full uppercase duration-300 -ml-14"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="py-5 border-t border-white/30">
+        <p class="text-sm text-center text-white">
+          <span class="text-green-700">copyright</span> @2025 Dawit
+          Mengesha.<span class="text-green-700"> All rights reserved.</span>
+        </p>
+      </div>
+    </footer>
+
+    <a
+      href="#"
+      class="fixed right-4 -bottom-1/2 bg-black text-white h-16 w-16 rounded-full text-x5 uppercase grid place-items-center hover:-translate-y-1 hover:bg-white hover:text-black duration-300 cursor-pointer z-50 md:h-20 md:w-20"
+      id="scroll-up"
+    >
+      <div>
+        <img
+          src="assets/images/scroll_icon.png"
+          alt="scroll"
+          class="w-8 mx-auto"
+        />
+        <span>GO TOP</span>
+      </div>
+    </a>
+    <script src="main.js"></script>
+  </body>
+</html>
