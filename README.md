@@ -25,4 +25,4 @@ npm start
 
 ---
 
-Feel free to copy, adapt, or tell me if you’d like a **shorter**, **longer**, or **more styled** version (like badges, emojis, etc). 💪
+Feel free to copy, adapt, or tell me if you’d like a **shorter**, **longer**, or **more styled** version (like emojis, etc). 💪
